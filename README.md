@@ -7,8 +7,8 @@ Un proyecto sencillo de calculadora desarrollado con HTML, CSS y JavaScript para
  - Diego Chuchon 
  
  NOTA: Usaré 2 cuentas diferentes para evidenciar los cambios que se realizen en el repositorio. Las cuentas son:
- - mdchuchon2401 (Cuenta de GitHub académica - desde donde se crea el repositorio)
- - GitBossDev (Cuenta de GitHub personal - accede desde VM para recrear cambios colaborativos)
+ - Cuenta principal: mdchuchon2401 (Cuenta de GitHub académica - desde donde se crea el repositorio)
+ - Cuenta secundaria: GitBossDev (Cuenta de GitHub personal - accede desde VM para recrear cambios colaborativos)
 
 
 ## Descripción
