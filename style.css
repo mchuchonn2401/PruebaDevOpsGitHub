@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.calculator {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+#result {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    padding: 0 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: white;
+    font-family: 'Courier New', monospace;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Números */
+button:not(.operator):not(.equals):not([onclick*="clear"]):not([onclick*="delete"]) {
+    background-color: #666;
+    color: white;
+}
+
+/* Operadores */
+.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+/* Botón igual */
+.equals {
+    background-color: #ff9500;
+    color: white;
+    grid-row: span 2;
+}
+
+/* Botón cero */
+.zero {
+    grid-column: span 2;
+    background-color: #666;
+    color: white;
+}
+
+/* Botones de función (C, ←) */
+button[onclick*="clear"], button[onclick*="delete"] {
+    background-color: #a6a6a6;
+    color: black;
+}
